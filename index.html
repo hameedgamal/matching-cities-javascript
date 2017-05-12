@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Search with JavaScript</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <style>
+            .input{
+                height: 40px;
+                padding: 5px 7px;
+                width: 400px;
+                font-size: 20px;
+            }
+            
+            ul{
+                width: 409px;
+                text-align: left;
+                padding: 0;
+                border: 1px solid #f5f5f5;
+
+            }
+
+            li{
+                list-style: none;
+                padding: 9px;
+                border-bottom: 1px solid #f5f5f5;
+            }
+
+            li:last-child{
+                border-bottom: 0;
+            }
+
+            li:hover{
+                background: #f5f5f5;
+                cursor: pointer;
+            }
+        </style>
+        
+        <center>
+            <h1 style="text-align: center;">
+                Welcome to Search with JavaScript! 
+            </h1>
+
+            <br>
+
+            <input id="input" class="input" type="text" placeholder="Find a Citie" autofocus>
+            <div class="matching-results" id="output">....</div>
+        </center>
+
+
+        <script src="index.js"></script>    
+    </body>
+</html>
