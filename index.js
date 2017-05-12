@@ -16,13 +16,13 @@
         findMatching(){
             this.matching = [];
 
-            this.data.forEach( (citie) => {
-                for(let i = 0, l = citie.alt.length; i < l; i++){
-                    let citieName = citie.alt[i];
-                        citieName = citieName.toLowerCase();
+            this.data.forEach( (city) => {
+                for(let i = 0, l = city.alt.length; i < l; i++){
+                    let cityName = city.alt[i];
+                        cityName = cityName.toLowerCase();
 
-                    if (citieName.search(this.query) !== -1){
-                        this.matching.push(citie.ref);
+                    if (cityName.search(this.query) !== -1){
+                        this.matching.push(city.ref);
                         break;
                     }
                 }
